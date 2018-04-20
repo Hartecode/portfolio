@@ -1,0 +1,211 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #303030;
+	margin: 0;
+}
+
+h1,h2 {
+  margin: 0;
+}
+
+header {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+  padding: 7px;
+	padding-right: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	-webkit-transition: all .5s;
+   transition: all .5s;	
+}
+
+
+a:link, a:visited { 
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5656d9;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.greeting {
+  box-sizing: border-box;
+  padding-top: 40vh;
+  text-align: center;
+  height: 100vh;
+}
+
+.statementGreeting{
+  font-size: 2em;
+}
+
+.continueDown {
+  margin-top: 20vh;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.contentBox {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.sectionTitle {
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.skillList{
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #dedede;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.profileImg {
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.projectTemp {
+  margin-bottom: 100px;
+}
+
+.projectTemp h3 {
+  margin: 12px;
+  font-size: 1.5em;
+}
+
+.projectImg {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #303030;
+  height: 50px;
+  font-size: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+footer a {
+  margin-right: 5px;
+  margin-left:5px;
+}
+
+
+footer a:link,footer a:visited { 
+  color: #fcfcfc;
+}
+
+footer a:hover {
+  color: #5656d9;
+  text-decoration: underline;
+}
+
+/*responsive nav bar*/
+.logo {
+	margin: 0;
+	float: left;
+}
+
+.navbutton {
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .navbutton {
+      font-size: 30px;
+      padding-left: 5px;
+      padding-right: 5px;
+      cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        position: fixed;
+        text-align: right;
+        background-color: #303030;
+        color: white;
+        width: 0;
+        margin-top: 50px;
+        padding-top: 5px;
+        overflow-x: hidden;
+        right: 0;
+        top: 0;
+        transition: all .5s;
+        -webkit-transition: all .5s; 
+    }
+
+    .navwidth {
+        width: 200px;
+    }
+
+    .navbar > div {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar > div a:link, .navbar > div a:visited {
+      color: white;
+    }
+
+
+
+    #opennav {
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .fullWidth {
+      width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    
+    #closenav, #opennav {
+        display: none;
+    }
+
+    .navbar {
+        height: 100%;
+        float: right;
+    }
+
+    .navbutton {
+        display: inline-block;
+    }
+}
