@@ -28,6 +28,7 @@ function navSlide() {
   let scroll_top = $(window).scrollTop();
 
   if (scroll_top > offset_val) { // the detection!
+  	clearInterval(arrowBounce);
     $nav_header.addClass('is-sticky');
   } else {
     $nav_header.removeClass('is-sticky');
