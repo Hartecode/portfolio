@@ -11,8 +11,8 @@ h1,h2 {
 header {
 	height: 50px;
 	width: 100%;
-	position: fixed;
-	top: 0;
+	position: absolute;
+  top: 0;
   padding: 7px;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -62,7 +62,7 @@ a:hover {
 }
 
 .sectionTitle {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: 50px;
   font-size: 25px;
 }
@@ -99,6 +99,18 @@ a:hover {
 .projectImg {
   width: 100%;
 }
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  background-color: #303030;
+  color: white;
+  opacity: 1;
+}
+
+.is-sticky a:link, .is-sticky a:visited { 
+  color: white;
+}  
 
 footer {
   text-align: center;
@@ -191,8 +203,8 @@ footer a:hover {
 
 @media screen and (min-width: 900px){
     header {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
     
     #closenav, #opennav {
@@ -206,5 +218,6 @@ footer a:hover {
 
     .navbutton {
         display: inline-block;
+        margin-left: 10px;
     }
 }
