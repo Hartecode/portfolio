@@ -67,6 +67,10 @@ a:hover {
   font-size: 25px;
 }
 
+.decStart {
+  font-size: 30px;
+}
+
 .skillList{
   font-size: 16px;
   display: flex;
@@ -85,6 +89,7 @@ a:hover {
 .profileImg {
   border-radius: 50%;
   margin-bottom: 30px;
+  width: 300px;
 }
 
 .projectTemp {

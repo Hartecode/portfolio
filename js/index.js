@@ -1,8 +1,8 @@
 const arrowBounce = setInterval(bounce, 3000);
 let $nav_header    = $('.banner'),
     header_height  = $('.banner').height(),
-    bio_height    = $('#bioBox').height(),
-    offset_val     = bio_height - header_height;
+    bio_height    = $('#bioBox').height() - 150,
+    offset_val     = bio_height  - header_height;
 
 
 function bounce(){
@@ -28,7 +28,6 @@ function navSlide() {
   let scroll_top = $(window).scrollTop();
 
   if (scroll_top > offset_val) { // the detection!
-  	clearInterval(arrowBounce);
     $nav_header.addClass('is-sticky');
   } else {
     $nav_header.removeClass('is-sticky');
