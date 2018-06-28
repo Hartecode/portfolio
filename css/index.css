@@ -95,13 +95,33 @@ a:hover {
 
 .sectionTitle {
   margin-bottom: 60px;
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 25px;
   width: 100%;
 }
 
+.aboutMe {
+  margin: auto;
+}
+
+#bioBox {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
 .decStart {
   font-size: 30px;
+}
+
+.skillblock {
+  display: flex;
+}
+
+.skillcategory {
+    width: 130px;
+    padding-top: 20px;
+    text-align: left;
 }
 
 .skillList{
@@ -109,10 +129,12 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
 }
 
 .skill {
-  background-color: #dedede;
+  background-color: #303030;
+  color: white;
   margin: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -198,6 +220,24 @@ footer a:hover {
       padding-left: 5px;
       padding-right: 5px;
       cursor: pointer;
+  }
+
+}
+
+@media screen and (min-width: 750px) {
+  .aboutMe {
+    width: 50%
+    order: 1;
+  }
+
+  .profileDec {
+    width: 100%;
+    order: 3
+  }
+
+  .mySkills {
+    width: 50%;
+    order: 2;
   }
 }
 

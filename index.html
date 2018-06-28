@@ -23,7 +23,7 @@
   		</nav>	
     </header>
     
-    <main class="container" role="main">
+    <main class="" role="main">
       
       <section class="greeting" role="region">
         <div>
@@ -69,15 +69,19 @@
             </div> 
         </div>
       </section>
+
       <section id="bioBox" class="contentBox" role="region">
 
         <div class="sectionTitle">
-          <h2>About</h2>
+          <h2>Bio</h2>
         </div>
 
-        <div>
+        <div class="aboutMe">
           <img class="profileImg" src="pic/bioPic.jpg">
-          <div class="profileDec">
+        </div>
+
+        <div class="profileDec">
+            <h3>About:</h3>
             <div class="decStart">
               A recent grad from  
               <a href="https://www.thinkful.com/">
@@ -88,28 +92,54 @@
             <p>I am a client side focused full stack developer.  I am currently working with the MERN stack.</p>
             <p>When I was younger I enjoyed building things with legos. I would sometimes follow the directions in the box but I had the most fun thinking outside the box to create unique pieces.  Now that I am older I have replaced my lego blocks for blocks of code.  By coding I can create anything my imagination can come up with.</p>
             <p>Have a cool project? <a href="mailto:seanharte@live.com">Let me know! <i class="fas fa-envelope"></i></a></p>
-          </div>
-          
+          </div>  
         </div>
 
-        <div>
+        <div class="mySkills">
           <h3>Skills:</h3>
-          <div class="skillList"> 
-            <div class="skill">JavaScript</div> 
-            <div class="skill">jQuery</div>
-            <div class="skill">AJAX</div>  
-            <div class="skill">React</div>  
-            <div class="skill">Express</div> 
-            <div class="skill">Node.js</div>
-            <div class="skill">MongoDB</div>
-            <div class="skill">HTML </div> 
-            <div class="skill">CSS</div>
-            <div class="skill">Bootstrap</div>
-          </div>
+            <div class="skillblock">
+              <div class="skillcategory">
+                <strong>Front-end:</strong> 
+              </div>
+              <ul class="skillList">
+                <li class="skill">React</li>
+                <li class="skill">Redux</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">jQuery</li>
+                <li class="skill">AJAX</li>
+                <li class="skill">HTML5</li>
+                <li class="skill">CSS3</li>
+              </ul>
+            </div>
+            
+            <div class="skillblock">
+              <div class="skillcategory">
+                <strong>Back-end:</strong>
+              </div>
+              <ul class="skillList">
+                <li class="skill">Node.js</li>
+                <li class="skill">Express</li>
+                <li class="skill">MongoDB</li>
+              </ul>
+            </div>
+
+            <div class="skillblock">
+              <div class="skillcategory">
+                <strong>Testing:</strong>
+              </div>
+              <ul class="skillList">
+                <li class="skill">Mocha</li>
+                <li class="skill">Chi</li>
+                <li class="skill">Enzyime</li>
+                <li class="skill">Jest</li>
+              </ul>
+            </div>
+
+          </ul>
         </div>
       </section>
       
-      <section id="projectBox" class="contentBox" role="region">
+      <section id="projectBox" class="container contentBox" role="region">
 
         <div class="sectionTitle"><h2>Projects</h2></div>
         <div class="projectTemp">
