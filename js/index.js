@@ -1,25 +1,18 @@
-const arrowBounce = setInterval(bounce, 3000);
 let $nav_header    = $('.banner'),
     greeting_height = $('.greeting').outerHeight();
  
 
-
-function bounce(){
-  $( ".downBtn" ).effect("bounce", {times:3}, 800);
-}
-
-
-$('.bio').click(function(){
+$('.bio').click( () => {
   $('html, body').animate({ scrollTop: $("#bioBox").offset().top}, 1000);
   $('nav').removeClass('fullWidth');
 });
 
-$('#project').click(function(){
+$('#project').click( () => {
   $('html, body').animate({ scrollTop: $("#projectBox").offset().top}, 1000);
   $('nav').removeClass('fullWidth');
 });
 
-$('#opennav').on('click', function(){
+$('#opennav').on('click', () => {
 	$('nav').toggleClass('fullWidth');
 });
 
