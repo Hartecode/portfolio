@@ -188,60 +188,56 @@ a:hover {
 }
 
 .projectTemp h3 {
-  margin: 12px;
-  font-size: 1.5em;
+    margin: 12px;
+    font-size: 1.5em;
 }
 
 .projectImg {
-  width: 100%;
+    width: 100%;
 }
 
 .is-sticky {
-  position: fixed;
-  top: 0;
-  background-color: #303030;
-  color: white;
-  opacity: 1;
+    position: fixed;
+    top: 0;
+    background-color: #303030;
+    color: white;
+    opacity: 1;
 }
 
 .is-sticky a:link, .is-sticky a:visited { 
-  color: white;
+    color: white;
 }  
 
 footer {
-  height: 110px;
-  display: grid;
-  text-align: center;
-  color: #fcfcfc;
-  background-color: #303030;
-  font-size: 22px;
-  padding: 20px;
-  box-sizing: border-box;
+    height: 110px;
+    display: grid;
+    text-align: center;
+    color: #fcfcfc;
+    background-color: #303030;
+    font-size: 22px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/*footer > div {
-  margin: 5px;
-}*/
-
 footer a {
-  margin-right: 5px;
-  margin-left:5px;
+    margin-right: 5px;
+    margin-left:5px;
 }
 
 
 footer a:link,footer a:visited { 
-  color: #cf8bfc;
+    color: #cf8bfc;
 }
 
 footer a:hover {
-  color: #5656d9;
-  text-decoration: underline;
+    color: #5656d9;
+    text-decoration: underline;
 }
 
 /*responsive nav bar*/
 .logo {
-  margin: 0;
-  float: left;
+    margin: 0;
+    float: left;
 }
 
 .navbutton {
@@ -252,37 +248,37 @@ footer a:hover {
 }
 
 @media screen and (min-width: 600px) {
-  .navbutton {
-      font-size: 30px;
-      padding-left: 5px;
-      padding-right: 5px;
-      cursor: pointer;
-  }
+    .navbutton {
+        font-size: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        cursor: pointer;
+    }
 
 }
 
 @media screen and (min-width: 750px) {
-  .aboutMe {
-    width: 40%
-    order: 1;
-  }
+    .aboutMe {
+        width: 40%
+        order: 1;
+    }
 
-  .profileDec {
-    margin: auto;
-    order: 3
-  }
+    .profileDec {
+        margin: auto;
+        order: 3
+    }
 
-  .mySkills {
-    width: 60%;
-    order: 2;
-  }
+    .mySkills {
+        width: 60%;
+        order: 2;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .navbar {
         position: fixed;
         text-align: right;
-        background-color: #303030;
+        background-color: #031229;
         color: white;
         width: 0;
         margin-top: 50px;
@@ -292,6 +288,10 @@ footer a:hover {
         top: 0;
         transition: all .5s;
         -webkit-transition: all .5s; 
+    }
+
+    .is-nav-stircky {
+        background-color: #303030;
     }
 
     .navwidth {
