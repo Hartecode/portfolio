@@ -13,6 +13,10 @@ h1,h2 {
   margin: 0;
 }
 
+h3 {
+
+}
+
 header {
   color: white;
   width: 100%;
@@ -145,7 +149,7 @@ a:hover {
 .profileImg {
   border-radius: 50%;
   margin-bottom: 30px;
-  width: 300px;
+  width: 200px;
 }
 
 .projectTemp {
@@ -231,7 +235,7 @@ footer a:hover {
   }
 
   .profileDec {
-    width: 100%;
+    margin: auto;
     order: 3
   }
 
