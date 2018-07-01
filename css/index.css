@@ -1,12 +1,11 @@
+body, html {
+    height: 100%;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #303030;
   margin: 0;
-  background-image: url(../pic/john-reign-abarintos-369080-unsplash.png);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  background-repeat: no-repeat;
 }
 
 h1,h2 {
@@ -85,6 +84,11 @@ a:hover {
 /* opening view greeting */
 .greeting {
   box-sizing: border-box;
+  background-image: url(../pic/john-reign-abarintos-369080-unsplash.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
   padding-top: 40vh;
   text-align: center;
   height: 100vh;
