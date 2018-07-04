@@ -85,6 +85,7 @@ a:hover {
 .greeting {
   box-sizing: border-box;
   background-image: url(../pic/john-reign-abarintos-369080-unsplash.png);
+  background-color: #03112a;
   background-position: center;
   background-size: cover;
   height: 100vh;
