@@ -1,26 +1,26 @@
-let $header    = $('.banner'),
+var $header    = $('.banner'),
     $nav       = $('nav');
 
 
 
-$('.bio').click( () => {
+$('.bio').click( function() {
   $('html, body').animate({ scrollTop: $("#bioBox").offset().top}, 1000);
   $nav.removeClass('fullWidth');
 });
 
-$('#project').click( () => {
+$('#project').click( function() {
   $('html, body').animate({ scrollTop: $("#projectBox").offset().top}, 1000);
   $nav.removeClass('fullWidth');
 });
 
-$('#opennav').on('click', () => {
+$('#opennav').on('click', function() {
 	$nav.toggleClass('fullWidth');
 });
 
 function navSlide() {
   
-  let greeting_height = $('.greeting').outerHeight();
-  let scroll_top = $(window).scrollTop();
+  var greeting_height = $('.greeting').outerHeight();
+  var scroll_top = $(window).scrollTop();
 
   if (scroll_top) {
     $nav.removeClass('fullWidth');
