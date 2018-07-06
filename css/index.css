@@ -161,6 +161,9 @@ a:hover {
   width: 130px;
   padding-top: 20px;
   margin: auto;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #cf8bfc; /* Safari */    
+  text-decoration-color: #cf8bfc;
 }
 
 .skillList{
