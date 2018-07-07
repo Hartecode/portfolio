@@ -153,8 +153,8 @@ a:hover {
   font-size: 30px;
 }
 
-.skillblock {
-  /*display: flex;*/
+.mySkills {
+  margin: auto;
 }
 
 .skillcategory {
