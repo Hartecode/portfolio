@@ -50,7 +50,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#canvas {
+canvas[resize] {
     position: absolute;
     left: 0;
     top: 0;
