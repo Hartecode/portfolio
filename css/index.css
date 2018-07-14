@@ -50,6 +50,15 @@ a:hover {
     text-decoration: underline;
 }
 
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .btn {
     outline: none;
     width: 100%;
@@ -84,8 +93,8 @@ a:hover {
 /* opening view greeting */
 .greeting {
   box-sizing: border-box;
-  background-image: url(../pic/john-reign-abarintos-369080-unsplash.png);
-  background-color: #03112a;
+  /*background-image: url(../pic/john-reign-abarintos-369080-unsplash.png);
+  background-color: #03112a;*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
