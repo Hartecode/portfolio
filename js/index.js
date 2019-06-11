@@ -1,38 +1,41 @@
-var $header    = $('.banner'),
-    $nav       = $('nav');
+'use strict';
 
+const bio = document.querySelector('.bio'),
+      project = document.querySelector('#project'),
+      opennav = document.querySelector('#opennav'),
+      bioBox = document.querySelector('#bioBox'),
+      projectBox = document.querySelector('#projectBox'),
+      header = document.querySelector('.banner'),
+      nav = document.querySelector('nav'),
+      greeting = document.querySelector('.greeting');
 
-
-$('.bio').click( function() {
-  $('html, body').animate({ scrollTop: $("#bioBox").offset().top}, 1000);
-  $nav.removeClass('fullWidth');
+bio.addEventListener('click', () => {
+  bioBox.scrollIntoView({behavior: "smooth"});
 });
 
-$('#project').click( function() {
-  $('html, body').animate({ scrollTop: $("#projectBox").offset().top}, 1000);
-  $nav.removeClass('fullWidth');
+project.addEventListener('click', () => {
+  projectBox.scrollIntoView({behavior: "smooth"});
 });
 
-$('#opennav').on('click', function() {
-	$nav.toggleClass('fullWidth');
+opennav.addEventListener('click', () => {
+  nav.classList.toggle('fullWidth');
 });
 
 function navSlide() {
+  const greeting_height = greeting.offsetHeight;
+  const scroll_top = window.scrollY;
   
-  var greeting_height = $('.greeting').outerHeight();
-  var scroll_top = $(window).scrollTop();
-
   if (scroll_top) {
-    $nav.removeClass('fullWidth');
+    nav.classList.remove('fullWidth');
   }
 
   if (scroll_top >= greeting_height) { // the detection!
-    $header.addClass('is-sticky');
-    $nav.addClass('is-nav-stircky');
+    header.classList.add('is-sticky');
+    nav.classList.add('is-nav-stircky');
   } else {
-    $header.removeClass('is-sticky');
-    $nav.removeClass('is-nav-stircky');
+    header.classList.remove('is-sticky');
+    nav.classList.remove('is-nav-stircky');
   }
 }
 
-$(window).scroll(navSlide);
+document.addEventListener('scroll', navSlide, {passive: true});
