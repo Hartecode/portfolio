@@ -1,0 +1,11 @@
+{
+  "short_name": "harte",
+  "name": "harteCode",
+  "icons": [
+  ],
+  "start_url": "/index.html/?source=pwa",
+  "background_color": "#303030",
+  "display": "standalone",
+  "scope": "/index.html/",
+  "theme_color": "#303030"
+}
