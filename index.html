@@ -288,5 +288,17 @@
       <div>©Sean Harte 2018</div>
     </footer>
     <script src="js/index.js"></script>
+    <script>
+      // this should be moved in a js file if multi stack pages
+      // check if supported
+      if('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(function(reg) { console.log("Service Worker Registered"); })
+            .catch(err => console.log(`Service worker error: ${err}`));
+        })
+      }
+    </script>
   </body>
 </html>
