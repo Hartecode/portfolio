@@ -13,9 +13,9 @@
         "sizes": "512x512"
       }
   ],
-  "start_url": "/?source=pwa",
+  "start_url": "https://www.hartecode.com/",
   "background_color": "#303030",
   "display": "standalone",
-  "scope": "/",
+  "scope": "https://www.hartecode.com/",
   "theme_color": "#303030"
 }
