@@ -1,4 +1,5 @@
 'use strict';
+import {runImageLazyLoad} from './lazy-load.mjs';
 
 const bio = document.querySelector('.bio'),
       project = document.querySelector('#project'),
@@ -37,5 +38,7 @@ function navSlide() {
     nav.classList.remove('is-nav-stircky');
   }
 }
+
+runImageLazyLoad();
 
 document.addEventListener('scroll', navSlide, {passive: true});
