@@ -3,14 +3,16 @@ importScripts('/cache-polyfill.js');
 
 const cacheName = 'v1';
 
-// const cacheAssests = [
-//   'index.html',
-//   'js/index.js',
-//   'js/paper-full.js',
-//   'css/index.css',
-//   'pic/babysteps.png',
-//   'pic/bioPic.jpg'
-// ];
+const cacheAssests = [
+  'index.html',
+  'js/index.mjs',
+  'js/lazy-load.mjs',
+  'js/star-field.mjs',
+  'css/index.css',
+  'pic/babysteps.png',
+  'pic/bioPic.jpg',
+  'seanharteResume.pdf'
+];
 
 // call install event
 self.addEventListener('install', e => {

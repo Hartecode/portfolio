@@ -1,7 +1,8 @@
 
-const targetImage = document.querySelectorAll('img');
+export const runImageLazyLoad = () => {
+  const targetImage = document.querySelectorAll('img');
 
-const lazyLoad = elm => {
+  const lazyLoad = elm => {
     const io = new IntersectionObserver((entries, observer) => {
          entries.forEach(entry => {
 
@@ -19,6 +20,9 @@ const lazyLoad = elm => {
     });
 
     io.observe(elm); 
-};
+  };
 
-export const runImageLazyLoad = () => targetImage.forEach(lazyLoad);
+  targetImage.forEach(lazyLoad);
+
+}
+

@@ -13,13 +13,16 @@ const nstrs = 300;
 
 const rInt = (s,b) => Math.floor(Math.random()*(b-s+1))+s;
 
-function Star(x,y,sz,s,o) {
-	this.x = parseInt(x);
-	this.y = parseInt(y);
-  this.radius = parseInt(sz);
-	this.speed = parseInt(s);
-	this.opacity = o;
-  this.draw = function(){
+class Star {
+  constructor(x,y,sz,s,o) {
+    this.x = parseInt(x);
+    this.y = parseInt(y);
+    this.radius = parseInt(sz);
+    this.speed = parseInt(s);
+    this.opacity = o;
+  }
+
+  draw() {
     cv.beginPath();
     cv.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
     cv.closePath();
@@ -30,7 +33,7 @@ function Star(x,y,sz,s,o) {
 
 function draw() {
   cv.clearRect(0,0,w,h);
-  for( let i=0; i<nstrs;i++) {
+  for( let i = 0; i < nstrs; i++) {
     strs[i].draw();
     strs[i].x -= strs[i].speed/2;
     if (strs[i].x <= 0) {

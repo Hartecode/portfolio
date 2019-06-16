@@ -2,6 +2,7 @@
 
 import {runImageLazyLoad} from './lazy-load.mjs';
 import {init as renderStars} from './star-field.mjs';
+import {projectData} from './projectData.mjs';
 
 const bio = document.querySelector('.bio'),
       project = document.querySelector('#project'),
@@ -11,6 +12,25 @@ const bio = document.querySelector('.bio'),
       header = document.querySelector('.banner'),
       nav = document.querySelector('nav'),
       greeting = document.querySelector('.greeting');
+
+const projectTemplate = ({name, image, github, website, skills, description}) => `
+<div class="projectTemp">
+          <h3>${name}</h3>
+          <img class="projectImg" data-lazy="${image.src}" alt="${image.alt}">
+          <a href="${github}" aria-label="${name} github" rel=”noopener” target="_blank">
+              <input class="btn" type="submit" value="GitHub" />
+          </a>
+          <a href="${website}" aria-label="${name}" rel=”noopener” target="_blank">
+              <input class="btn" type="submit" value="Demo" />
+          </a>
+         
+          <ul class="skillList">
+            ${skills.map( s => `<li class="skill">${s}</li>`).join('')}
+          </ul>
+          <p>${description}</p>
+        </div>`;
+
+projectBox.insertAdjacentHTML('beforeend', projectData.map(projectTemplate).join(''));
 
 bio.addEventListener('click', () => {
   bioBox.scrollIntoView({behavior: "smooth"});
@@ -40,6 +60,7 @@ function navSlide() {
     nav.classList.remove('is-nav-stircky');
   }
 }
+
 
 runImageLazyLoad();
 renderStars();
