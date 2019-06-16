@@ -40,6 +40,7 @@ header {
     overflow: hidden;
     -webkit-transition: all .5s;
     transition: all .5s; 
+    z-index: 1;
 }
 
 header a:link, header a:visited { 
@@ -94,7 +95,6 @@ canvas[resize] {
 }
 
 
-
 .container {
   max-width: 900px;
   margin: auto;
@@ -108,7 +108,9 @@ canvas[resize] {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   padding-top: 40vh;
+  position: relative;
   text-align: center;
   height: 100vh;
   color: white;

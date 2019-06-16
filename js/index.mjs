@@ -1,5 +1,7 @@
 'use strict';
+
 import {runImageLazyLoad} from './lazy-load.mjs';
+import {init as renderStars} from './star-field.mjs';
 
 const bio = document.querySelector('.bio'),
       project = document.querySelector('#project'),
@@ -40,5 +42,6 @@ function navSlide() {
 }
 
 runImageLazyLoad();
+renderStars();
 
 document.addEventListener('scroll', navSlide, {passive: true});
