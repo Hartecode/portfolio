@@ -32,7 +32,7 @@ self.addEventListener('activate', e => {
   console.log('Service worker active');
   // Remove unwanted cashes
   e.waitUntil(
-    cache.keys().then(cacheNames => {
+    caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cache => {
           if (cache !== cacheName) {
