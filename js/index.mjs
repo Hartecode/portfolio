@@ -12,15 +12,15 @@ const bio = document.querySelector('.bio'),
 
 bio.addEventListener('click', () => {
   bioBox.scrollIntoView({behavior: "smooth"});
-});
+},  {passive: true});
 
 project.addEventListener('click', () => {
   projectBox.scrollIntoView({behavior: "smooth"});
-});
+},  {passive: true});
 
 opennav.addEventListener('click', () => {
   nav.classList.toggle('fullWidth');
-});
+}, {passive: true});
 
 function navSlide() {
   const greeting_height = greeting.offsetHeight;

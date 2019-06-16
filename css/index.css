@@ -14,8 +14,8 @@ h1,h2 {
 
 h3 {
   text-decoration: underline;
-  -webkit-text-decoration-color: #cf8bfc; /* Safari */    
-  text-decoration-color: #cf8bfc;
+  -webkit-text-decoration-color: #9954c7; /* Safari */    
+  text-decoration-color: #9954c7;
 }
 
 img {
@@ -77,8 +77,8 @@ canvas[resize] {
     cursor: pointer;
     width: 49%;
     max-width: 300px;
-    border: 2px solid #cf8bfc;
-    color: #cf8bfc;
+    border: 2px solid #9954c7;
+    color: #9954c7;
     margin: 10px 0;
     box-shadow: 2px 2px rgba(207, 139, 252, 0.39);
     -webkit-transition: all .3s;
@@ -86,7 +86,7 @@ canvas[resize] {
 }
 
 .btn:hover {
-    box-shadow: 2px 2px #cf8bfc;
+    box-shadow: 2px 2px #9954c7;
 }
 
 .btn:active {
@@ -142,7 +142,7 @@ canvas[resize] {
 }
 
 .emailLink {
-  color: #cf8bfc;
+  color: #9954c7;
 }
 
 .contentBox {
@@ -181,8 +181,8 @@ canvas[resize] {
   padding-top: 20px;
   margin: auto;
   text-decoration: underline;
-  -webkit-text-decoration-color: #cf8bfc; /* Safari */    
-  text-decoration-color: #cf8bfc;
+  -webkit-text-decoration-color: #9954c7; /* Safari */    
+  text-decoration-color: #9954c7;
 }
 
 .skillList{
@@ -252,7 +252,7 @@ footer a {
 
 
 footer a:link,footer a:visited { 
-    color: #cf8bfc;
+    color: #9954c7;
 }
 
 footer a:hover {
