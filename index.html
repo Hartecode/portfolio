@@ -9,19 +9,43 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" sizes="192x192" href="pic/codeicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <style>
+      /* icons from fontello */
+      @font-face {
+        font-family: 'fontello';
+        src: url('/font/fontello.eot?88044593');
+        src: url('/font/fontello.eot?88044593#iefix') format('embedded-opentype'),
+            url('/font/fontello.woff?88044593') format('woff'),
+            url('/font/fontello.ttf?88044593') format('truetype'),
+            url('/font/fontello.svg?88044593#fontello') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      i {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+      }
+    </style>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="banner" role='banner'>
       <div class="logo">
-        <h1> <i class="fas fa-chevron-left"></i>harteCode /<i class="fas fa-chevron-right"></i></h1>
+        <h1> <i>&#xe801;</i>harteCode /<i>&#xe802;</i></h1>
       </div>
       
-      <div id="opennav"><i class="fas fa-bars"></i></div>
+      <div id="opennav">
+        <i>&#xf0c9;</i>
+      </div>
   		<nav role="navigation" class="navbar">
-  			<div id="bio" class="bio navbutton"><a href="#bioBox">Bio</a></div>
-  			<div id="project" class="navbutton"><a href="#projectBox">Projects</a></div>
+  			<div id="bio" class="bio navbutton">
+          <a href="#bioBox">Bio</a>
+        </div>
+        <div id="project" class="navbutton">
+          <a href="#projectBox">Projects</a>
+        </div>
   		</nav>	
     </header>
     
@@ -38,7 +62,7 @@
             <div class="contackLink">
               <a href="https://github.com/Hartecode" rel=”noopener” aria-label="Sean Harte's GitHub" target="_blank">
               <div>
-                <i class="fab fa-github fa-3x githubIcon"></i>
+                <i class="githubIcon icon-large-size">&#xf09b;</i>
               </div>
               <span class="githubIcon">GitHub</span>
               </a>
@@ -47,7 +71,7 @@
             <div class="contackLink">
               <a href="https://www.linkedin.com/in/seanharte/" rel=”noopener” aria-label="Sean Harte's LinkedIn" target="_blank">
               <div>
-                <i class="fab fa-linkedin fa-3x linkedinIcon"></i>
+                <i class="linkedinIcon icon-large-size">&#xf30c;</i>
               </div>
               <span class="linkedinIcon">LinkedIn</span>
               </a>
@@ -56,7 +80,7 @@
             <div class="contackLink">
               <a href="seanharteResume.pdf" rel=”noopener” aria-label="Sean Harte's Resume" target="_blank">
                 <div>
-                  <i class="fas fa-file-pdf fa-3x resumeIcon"></i>
+                  <i class="resumeIcon icon-large-size">&#xf1c1;</i>
                 </div>
                 <span class="resumeIcon">Résumé</span>
               </a>
@@ -65,7 +89,7 @@
             <div class="contackLink">
               <a href="mailto:seanharte@live.com" rel=”noopener” aria-label="Sean Harte's email" target="_blank">
                 <div>
-                  <i class="far fa-envelope fa-3x emailLink"></i>
+                  <i class="emailLink icon-large-size">&#xe800;</i>
                 </div>
                 <span class="emailLink">Email</span>
               </a>
@@ -148,9 +172,9 @@
     </main>
     <footer role="contentinfo">
       <div>
-        <a href="https://github.com/Hartecode" rel=”noopener” aria-label="Sean Harte's GitHub"><i class="fab fa-github githubIcon"></i></a>
-        <a href="https://www.linkedin.com/in/seanharte/" rel=”noopener” aria-label="Sean Harte's Linkedin"><i class="fab fa-linkedin linkedinIcon"></i></a>
-        <a href="mailto:seanharte@live.com" rel=”noopener” aria-label="Sean Harte's email"><i class="fas fa-envelope emailLink"></i></a>
+        <a href="https://github.com/Hartecode" rel=”noopener” aria-label="Sean Harte's GitHub"><i class="githubIcon">&#xf09b;</i></a>
+        <a href="https://www.linkedin.com/in/seanharte/" rel=”noopener” aria-label="Sean Harte's Linkedin"><i class="linkedinIcon">&#xf30c;</i></a>
+        <a href="mailto:seanharte@live.com" rel=”noopener” aria-label="Sean Harte's email"><i class="emailLink">&#xf0e0;</i></a>
       </div>
       <div>©Sean Harte 2018</div>
     </footer>
