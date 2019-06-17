@@ -16,7 +16,7 @@ const bio = document.querySelector('.bio'),
 const projectTemplate = ({name, image, github, website, skills, description}) => `
 <div class="projectTemp">
           <h3>${name}</h3>
-          <img class="projectImg" data-lazy="${image.src}" alt="${image.alt}">
+          <img class="projectImg hide" data-lazy="${image.src}" alt="${image.alt}">
           <a href="${github}" aria-label="${name} github" rel=”noopener” target="_blank">
               <input class="btn" type="submit" value="GitHub" />
           </a>
