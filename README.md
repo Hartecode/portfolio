@@ -1,6 +1,7 @@
 <h1>Portfolio</h1>
 <p>This is Sean Harte's protfolio website</p>
-<p>Check out the live site at <a href="http://www.hartecode.com/" target="_blank">www.hartecode.com</a>!</p>
+[demo](https://hartecode.github.io/portfolio/)
+<p>Check out the new site <a href="http://www.hartecode.com/" target="_blank">www.hartecode.com</a>!</p>
 
 Made with:
 <ul>
